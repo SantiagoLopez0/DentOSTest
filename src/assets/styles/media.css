@@ -1,0 +1,5 @@
+@media (max-width: 640px) {
+    .login_container h2 {
+      font-size: 35px !important;
+    }
+}

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.home_section{
+    width: 100vw;
+    height: 100vh;
+}
+
+.home_section h1{
+    color: #2f9fe9;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.home_section_options{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_section_options a{
+    width: 18em;
+    height: 4em;
+    margin-bottom: 15px;
+    font-family: 'Spartan', sans-serif;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background-color: #2f9fe9;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_section_options a:hover {
+    cursor: pointer;
+    background-color: #2284c5;
+}
+
+/* Input & Labels Styles/Interaction */
+.input {
+	border: none;
+	width: 90%;
+	height: 100%;
+	color: #000;
+	border: none;
+	font-family: "Spartan", sans-serif;
+	font-weight: 500;
+	font-size: 15px;
+	outline: none;
+	padding: 0px 15px;
+	border-bottom: 2px solid #2f9fe9;
+}
+
+.input:focus {
+	outline: none;
+}
+
+.label {
+	color: #2f9fe9;
+	font-size: 12px;
+	font-weight: 500;
+	position: absolute;
+	pointer-events: none;
+	font-family: "Spartan", sans-serif;
+	left: 9px;
+	top: 15px;
+	transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-webkit-transition: 0.2s ease all;
+}
+
+.warn_label {
+	color: rgba(255, 71, 87, 0.9);
+    font-family: 'Spartan', sans-serif;
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-webkit-transition: 0.2s ease all;
+}
+
+.input:placeholder-shown + .label,
+.input:placeholder-shown ~ .warn_label,
+.input:not(:placeholder-shown) ~ .warn_label {
+	visibility: hidden;
+	z-index: -1;
+	transition: 0.2 ease-in-out;
+}
+
+
+.input:not(:focus):not(:placeholder-shown):invalid ~ .warn_label,
+.input:not(:placeholder-shown) + .label,
+.input:focus:not(:placeholder-shown) + .label {
+    visibility: visible;
+	z-index: 1;
+	opacity: 1;
+}
+
+.input:not(:placeholder-shown) + .label,
+.input:focus:not(:placeholder-shown) + .label {
+    transform: translateY(-20px);
+    transition: 0.2s ease-in-out transform;
+}
+
+.input:not(:focus):invalid + .label {
+	color: rgba(255, 71, 87, 0.8);
+}
+
+.input:not(:placeholder-shown):invalid {
+	border-bottom: 2px solid rgba(255, 71, 87, 0.8);
+}
+/* Input & Labels Styles/Interaction */
