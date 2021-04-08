@@ -3,7 +3,7 @@
 	justify-content: center;
 	align-items: center;
 	height: 64px;
-	width: 100vw;
+	width: 100%;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
@@ -13,3 +13,4 @@
 	color: #40b3ff;
 	text-decoration: none;
 }
+

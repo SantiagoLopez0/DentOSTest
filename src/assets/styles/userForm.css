@@ -1,0 +1,218 @@
+.userForm_section {
+	min-height: 900px;
+}
+
+.userForm_section h2 {
+	text-align: center;
+	font-size: 40px;
+	font-weight: 300;
+	color: #2f9fe9;
+	margin-bottom: 0;
+}
+
+.userForm_section p {
+	text-align: center;
+	font-family: "Spartan", sans-serif;
+	margin-bottom: 25px;
+    font-size: 14px;
+    color: #2f9fe9;
+}
+
+.user_form_container {
+	width: 100%;
+	height: 105vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.user_form {
+	width: 40vh;
+    min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.user_form_inputGroup {
+	width: 100%;
+	height: 30px;
+	margin-bottom: 3.5rem;
+	position: relative;
+}
+
+.user_form_radioGroup {
+	height: 90px;
+	margin-bottom: 2rem;
+}
+
+.user_form_radioGroup p{
+	margin: 5px 0;
+	font-size: 14px;
+	color: #2f9fe9;
+}
+
+.user_form_radioGroup input {
+	margin: 0;
+	padding: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.dentist1,
+.dentist2,
+.dentist3 {
+	background-image: url("../static/dentista.svg");
+}
+
+.user_form_radioGroup input:active + .form_radioGroup_label {
+	opacity: 0.9;
+}
+
+.user_form_radioGroup input:checked + .form_radioGroup_label {
+	-webkit-filter: none;
+	-moz-filter: none;
+	filter: none;
+}
+
+.form_radioGroup_label {
+	cursor: pointer;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: inline-block;
+	width: 33%;
+	height: 60px;
+	-webkit-transition: all 100ms ease-in;
+	-moz-transition: all 100ms ease-in;
+	transition: all 100ms ease-in;
+
+	-webkit-filter: brightness(1.8) grayscale(1) opacity(0.7);
+	-moz-filter: brightness(1.8) grayscale(1) opacity(0.7);
+	filter: brightness(1.8) grayscale(1) opacity(0.7);
+}
+
+.form_radioGroup_label:hover {
+	-webkit-filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+	-moz-filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+	filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+}
+
+.user_form_selectGroup{
+    height: 110px;
+    margin-bottom: 2.5rem;
+}
+
+.custom-select {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.custom-select__trigger {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 22px;
+	font-size: 15px;
+	font-family: 'Spartan', sans-serif;
+	color: #2f9fe9;
+	height: 45px;
+	background: #ffffff;
+	cursor: pointer;
+	border: 2px solid #2f9fe9;
+    border-radius: 15px;
+}
+.custom-options {
+	position: absolute;
+	display: block;
+	top: 100%;
+	left: 0;
+	right: 0;
+	border: 2px solid #2f9fe9;
+	border-top: 0;
+	background: #fff;
+	transition: all 0.5s;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	z-index: 2;
+}
+.custom-select.open .custom-options {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: all;
+}
+.custom-option {
+	position: relative;
+	display: block;
+	padding: 0 22px 0 22px;
+    font-family: 'Spartan', sans-serif;
+	font-size: 15px;
+	color: #000;
+	line-height: 45px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+.custom-option:hover {
+	cursor: pointer;
+	background-color: #b2b2b2;
+}
+.custom-option.selected {
+	color: #ffffff;
+	background-color: #2284c5;
+}
+
+.arrow {
+	position: relative;
+	height: 15px;
+	width: 15px;
+}
+.arrow::before,
+.arrow::after {
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	width: 0.15rem;
+	height: 100%;
+	transition: all 0.5s;
+}
+.arrow::before {
+	left: -5px;
+	transform: rotate(45deg);
+	background-color: #2f9fe9;
+}
+.arrow::after {
+	left: 5px;
+	transform: rotate(-45deg);
+	background-color: #2f9fe9;
+}
+.open .arrow::before {
+	left: -5px;
+	transform: rotate(-45deg);
+}
+.open .arrow::after {
+	left: 5px;
+	transform: rotate(45deg);
+}
+
+.userForm_submitBtn {
+	height: 50px;
+	background-color: #2f9fe9;
+	border-radius: 15px;
+	border: none;
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+	color: white;
+	font-weight: 500;
+	letter-spacing: 5px;
+
+	box-shadow: 5px 4px 7px #888888;
+}
+
+.userForm_submitBtn:hover {
+	background-color: #2284c5;
+	cursor: pointer;
+}

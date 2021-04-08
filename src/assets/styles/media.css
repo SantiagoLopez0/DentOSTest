@@ -1,5 +1,33 @@
 @media (max-width: 640px) {
+    .header a {
+        font-size: 25px;
+    }
+
     .login_container h2 {
       font-size: 35px !important;
     }
+
+    .userForm_section p {
+        margin-bottom: 25px !important;
+    }
+
+    .userForm_section h2 {
+        font-size: 30px !important;
+    }
+
+    .user_form_inputGroup {
+        margin-bottom: 2rem !important;
+    }
+
+    .user_form_radioGroup p {
+        margin-block-end: 0 !important;
+        margin-bottom: 10px !important;
+    }
+}
+
+@media (max-width: 1007px) {
+    .user_form {
+        width: 60vw !important;
+    }
+
 }

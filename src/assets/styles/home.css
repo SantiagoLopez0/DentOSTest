@@ -15,11 +15,16 @@ body {
     height: 100vh;
 }
 
-.home_section h1{
+.home_section h1 {
     color: #2f9fe9;
     font-size: 40px;
     text-align: center;
     font-weight: 300;
+}
+
+.home_section p {
+ text-align: center;
+ font-family: 'Spartan', sans-serif;
 }
 
 .home_section_options{
@@ -114,7 +119,7 @@ body {
 
 .input:not(:placeholder-shown) + .label,
 .input:focus:not(:placeholder-shown) + .label {
-    transform: translateY(-20px);
+    transform: translateY(-25px);
     transition: 0.2s ease-in-out transform;
 }
 
